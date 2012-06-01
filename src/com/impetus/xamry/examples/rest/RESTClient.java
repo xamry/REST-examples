@@ -21,6 +21,9 @@ public class RESTClient
         System.out.println(client.target("http://localhost:8080/REST-examples/rest/hello").request(MediaType.TEXT_HTML).get(String.class));
         
         System.out.println(client.target("http://localhost:8080/REST-examples/rest/todo").request(MediaType.APPLICATION_XML).get(String.class));
-        System.out.println("Hiiii");
+        
+        System.out.println(client.target("http://localhost:8080/REST-examples/rest/todo").request(MediaType.APPLICATION_JSON).get(String.class));
+        
+        
     }
 }
